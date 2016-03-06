@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>练习</title>
+<style>
+span{
+    color:blue;
+}
+</style>
+<style>
+pan{
+    color:green;
+}
+</style>
+<style type="text/css">
+table tr td,th{border:1px solid #000;}
+</style>
+</head>
+
+<body>
+  <h1>标题标签</h1>
+  <h2>二级标题</h2>
+  <p>段落标签</p>
+  <p id="p1">我是第一段文字</p>
+  <p id="p2">我是第二段文字</p>
+  <!--<em>斜体强调，<strong>粗体强调-->
+  <p><em>菲茨杰拉德</em>，二十世纪美国文学巨擘之一，兼具<span>作家</span>和编剧双重身份。他以<pan>诗人</pan>的<span>敏感</span>和戏剧家的想象为<strong>"爵士乐时代"</strong>吟唱华丽挽歌，其诗人和梦想家的气质亦为那个奢靡年代的不二注解。</p>
+  <p>周瑜，不可否认，他是历史上一个了不起的英雄人物！确实也配的上那句<q>聪明秀出为之英，胆略过人为之雄。</q></p>
+  <h3>心似桂花开</h3>
+  <p>大家都在忙于自认为最重要的事情，却没能享受到人生的乐趣，反而要吞下苦果？</p>
+  <!--<q>标签是对简短文本的引用，比如说引用一句话就用到<q>标签。引用文本比较长，所以使用<blockquote>。-->
+  <blockquote>暗淡轻黄体性柔，情疏迹远只香留。何须浅碧深红色，自是花中第一流。</blockquote>
+  <p>这是<a href="http://www.gushiwen.org/Author_c3c8446bd4.aspx" title="才女" target="_blank">李清照</a>《咏桂》中的词句，在李清照看来，桂花暗淡青黄，性情温柔，淡泊自适，远比那些大红大紫争奇斗艳花值得称道。</p>
+  <img src="http://img2.ph.126.net/95lohYMXVu8aFKVKvkT7nA==/41376821594112042.jpg" alt="image download error" title="李清照">
+  <h2>《咏&nbsp;桂》</h2>
+  <p>
+  暗淡轻黄体性柔，<br/>
+  情疏迹远只香留。<br/>
+  何须浅碧深红色，<br/>
+  自是花中第一流。
+  </p>
+
+  <div id="无序列表">
+  <ul>
+      <li>我的第一个列表信息</li>
+      <li>我的第二个列表信息</li>
+  </ul></div>
+  <div id="有序列表">
+  <ol>
+      <li>我的第一个列表信息</li>
+      <li>我的第二个列表信息</li>
+  </ol></div>
+
+  <table summary="一班、二班和三班的学生成绩"> <!--表格-->
+  <caption>三个班学生的平均成绩</caption>
+    <tbody>
+      <tr>
+        <th>班级</th>
+        <th>学生数</th>
+        <th>平均成绩</th>
+      </tr>
+      <tr>
+        <td>一班</td>
+        <td>30</td>
+        <td>89</td>
+      </tr>
+      <tr>
+        <td>二班</td>
+        <td>35</td>
+        <td>85</td>
+      </tr>
+      <tr>
+          <td>三班</td>
+          <td>32</td>
+          <td>80</td>
+      </tr>
+    </tbody>
+  </table>
+<!--使用表单标签，与用户交互-->
+  <form>method="post" action="save.php"
+        <label for="username">用户名:</label>
+        <input type="text"  name="username" id="username" value="" />
+        <label for="pass">密码:</label>
+        <input type="password"  name="pass" id="pass" value="" />
+        <input type="submit" value="确定"  name="submit" />
+        <input type="reset" value="重置" name="reset" />
+  </form>
+  <form  method="post" action="save.php">
+    账户:
+    <input type="text" name="myName" value="your name"/>
+    <br>
+    密码:
+      <input type="password" name="pass" value="you " />
+  </form>
+  <!--文本域-->
+  <form>
+      <label>个人简介：</label>
+      <br/>
+      <textarea cols="50" rows="5">在这里输入内容...</textarea>
+      <input type="submit" value="确定"  name="submit" />
+      <input type="reset" value="重置"  name="reset" />
+  </form>
+  <!--单选框、复选框、下拉框单选、下拉框多选、提交、重置-->
+  <form action="save.php" method="post" >
+      <label>性别:</label>
+      <label>男</label>
+      <input type="radio" value="1"  name="gender" />
+      <label>女</label>
+      <input type="radio" value="2"  name="gender" />
+      <br/><br/>
+      What sports do you like? <br/>
+      <input type="checkbox" name="checkbox1" value="running"/> running
+      <input type="checkbox" name="checkbox2" value="mountain-climbing"  checked="checked"/> mountain-climbing
+      <input type="checkbox" name="checkbox3" value="walking"/> walking
+      <br/><br/>
+      <label>爱好:</label>
+          <select>
+            <option value="看书">看书</option>
+            <option value="旅游"selected="selected">旅游</option>
+            <option value="运动">运动</option>
+            <option value="购物">购物</option>
+          </select>
+      <label>爱好:</label>
+          <select multiple="multiple">
+            <option value="看书">看书</option>
+            <option value="旅游">旅游</option>
+            <option value="运动">运动</option>
+            <option value="购物">购物</option>
+          </select>
+      <br/><br/>
+      <label for="myName">姓名：</label>
+          <input type="text" value=" " name="myName " />
+          <input type="submit" value="提交" name="submitBtn" />
+          <input type="reset"  value="重置" />
+  </form>
+  <form>
+     <label for="male">男</label>
+    <input type="radio" name="gender" id="male" />
+    <br />
+    <label for="female">女</label>
+    <input type="radio" name="gender" id="female" />
+    <br />
+    <label for="email">输入你的邮箱地址</label>
+    <input type="email" id="email" placeholder="Enter email">
+  </form>
+
+  <hr/><!--分割线-->
+  <p> <address>本文的作者：<a href="mailto:kaixinjiandan@gmail.com">ming</a></address>
+  </p>
+
+  <script type="text/javascript">
+  document.write("hello");
+  document.getElementById("p1").style.color="blue";
+  </script>
+</body>
+</html>
